@@ -4,12 +4,12 @@ import { NextPage } from 'next'
 
 const Index: NextPage = () => {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>Tech Online Store</title>
       </Head>
       <div className="text-2xl font-bold text-purple-600">Hi Gayle</div>
-    </>
+    </React.Fragment>
   )
 }
 
