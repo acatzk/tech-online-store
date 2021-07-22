@@ -3,7 +3,7 @@ import Header from 'components/Header'
 
 const DefaultLayout: React.FC = ({ children }) => {
   return (
-    <div className="antialiased min-h-screen text-black bg-[#ECECEC]">
+    <div className="relative antialiased text-black bg-[#ECECEC] min-h-[2000px]">
       <Header />
       <main>{children}</main>
     </div>
