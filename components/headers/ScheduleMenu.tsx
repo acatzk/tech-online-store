@@ -34,7 +34,7 @@ const ScheduleMenu: React.FC<ScheduleMenuProps> = ({ setIsSchedule }) => {
               </p>
             </div>
           </li>
-          <li className="flex items-center flex-col justify-center py-4">
+          <li className="flex items-center flex-col justify-center py-4 space-y-1">
             <h3 className="mr-16 font-medium">
               Phones: <span className="text-color-3">(00) 1234 5678</span>
             </h3>

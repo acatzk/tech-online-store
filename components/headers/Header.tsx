@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import ScheduleMenu from 'components/ScheduleMenu'
 import { Logo, Menu, Cart, User } from 'utils/Icons'
 import { BiChevronDown, BiSearch } from 'react-icons/bi'
+import ScheduleMenu from 'components/headers/ScheduleMenu'
 
 const Header: React.FC = () => {
   const [isSchedule, setIsSchedule] = useState(false)
