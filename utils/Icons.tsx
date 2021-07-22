@@ -120,3 +120,19 @@ export const Location: React.FC<ILogo> = ({ className }) => {
     </svg>
   )
 }
+
+export const LogoWide: React.FC<ILogo> = ({ className }) => {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 29 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.1101 0.52002L0.130463 8.71339V18.7975L14.1101 26.9909L25.3245 20.6883V23.6821L14.1101 30.2998L0.130463 21.9488V25.5728L14.1101 33.6086L28.0897 25.5728V15.4887L16.8753 21.9488V18.7975L28.0897 12.1798V8.71339L14.1101 0.52002Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
