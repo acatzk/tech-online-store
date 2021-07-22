@@ -1,5 +1,6 @@
 import React from 'react'
-import { Clock, Location } from 'utils/Icons'
+import { Location } from 'utils/Icons'
+import { FiClock } from 'react-icons/fi'
 
 interface ScheduleMenuProps {
   setIsSchedule: Function
@@ -10,9 +11,9 @@ const ScheduleMenu: React.FC<ScheduleMenuProps> = ({ setIsSchedule }) => {
     <React.Fragment>
       <div className="fixed container max-w-md left-0 mt-2 rounded-none sm:rounded shadow-xl mx-0 sm:mx-4 z-10 bg-white text-black">
         <div className="absolute w-5 h-5 bg-white rotate-45 -top-0.5 left-32"></div>
-        <ul className="relative divide-y-2 divide-[#CCCCCC]">
+        <ul className="relative divide-y-2 divide-gray-300">
           <li className="flex items-start justify-center space-x-4 py-4">
-            <Clock className="w-8 h-8" />
+            <FiClock className="w-6 h-6" />
             <div className="space-y-1">
               <p className="font-medium">We are open:</p>
               <h3>
