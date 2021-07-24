@@ -7,8 +7,8 @@ interface AccountDropdownProps {
 const AccountDropdown: React.FC<AccountDropdownProps> = ({ setIsAccount }) => {
   return (
     <React.Fragment>
-      <div className="fixed container w-full sm:w-[260px] sm:right-4 md:right-6 lg:right-16 inset-x-0 sm:inset-x-auto mt-2 shadow-xl z-10 bg-white text-black">
-        <div className="absolute w-5 h-5 bg-white right-6 md:right-2 rotate-45"></div>
+      <div className="fixed container w-full sm:w-[260px] sm:right-4 md:right-6 inset-x-0 sm:inset-x-auto mt-2 shadow-xl z-10 bg-white text-black">
+        <div className="block md:hidden absolute w-5 h-5 bg-white right-6 md:right-2 rotate-45"></div>
         <div className="relative">
           <ul className="py-1.5 text-xs">
             {[
