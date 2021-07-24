@@ -1,8 +1,8 @@
 import React from 'react'
-import { LogoWide } from 'utils/Icons'
 import { CgClose } from 'react-icons/cg'
 import { sidebarLinks } from 'mock/index'
 import { BiChevronRight } from 'react-icons/bi'
+import { LogoWide, LogoName } from 'utils/Icons'
 
 interface SidebarProps {
   isOpen: boolean
@@ -15,11 +15,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
       <div
         className={`${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transform top-0 left-0 max-w-[260px] md:max-w-[300px] w-full bg-white text-black
+        } transform top-0 left-0 max-w-[300px] md:max-w-[400px] w-full bg-white text-black
         fixed h-full shadow overflow-auto ease-in-out transition-all duration-300 z-30`}
       >
         <div className="flex items-center justify-between py-5 mx-4 md:mx-6 border-b border-gray-300">
-          <LogoWide className="w-8 h-8 text-color-3" />
+          <div>
+            <LogoWide className="w-8 h-8 text-color-3 block md:hidden" />
+            <LogoName className="w-10 h-8 hidden md:block" />
+          </div>
           <button
             onClick={() => setIsOpen(false)}
             className="active:scale-75 transition ease-in-out duration-100"
