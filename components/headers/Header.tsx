@@ -1,11 +1,13 @@
+import Sidebar from './Sidebar'
 import React, { useState } from 'react'
-import Sidebar from 'components/headers/Sidebar'
+import AccountDropdown from './AccountDropdown'
+import ScheduleDropdown from './ScheduleDropdown'
 import { Logo, Menu, Cart, User } from 'utils/Icons'
 import { BiChevronDown, BiSearch } from 'react-icons/bi'
-import ScheduleMenu from 'components/headers/ScheduleMenu'
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isAccount, setIsAccount] = useState(false)
   const [isSchedule, setIsSchedule] = useState(false)
 
   return (
@@ -13,11 +15,11 @@ const Header: React.FC = () => {
       <header className="sticky top-0 overflow-x-hidden">
         {/* This is schedule and contact us links */}
         <section className="text-xs font-semibold bg-black text-white">
-          <div className="container flex items-center justify-between px-4 py-2">
+          <div className="container flex items-center justify-between px-4 py-1">
             <div className="ml-16">
               <button
                 onClick={() => setIsSchedule((prev) => !prev)}
-                className="inline-flex items-center rounded-full px-1 py-0.5 border 
+                className="inline-flex items-center rounded-full px-1 py-0.5 border focus:border-color-5
                   border-transparent hover:border-color-5 space-x-1 transition ease-in-out duration-150"
               >
                 <span className="text-color-5 line-clamp-1">Mon-Thu:</span>
@@ -25,7 +27,7 @@ const Header: React.FC = () => {
                 <BiChevronDown className="w-4 h-4" />
               </button>
               {/* This is where SchduleMenuToggle shows */}
-              {isSchedule && <ScheduleMenu setIsSchedule={setIsSchedule} />}
+              {isSchedule && <ScheduleDropdown setIsSchedule={setIsSchedule} />}
             </div>
             <div>
               <a href="#" className="border-b border-white line-clamp-1">
@@ -35,7 +37,7 @@ const Header: React.FC = () => {
           </div>
         </section>
         {/* This is the Main header */}
-        <section className="bg-color-3 px-4 py-3.5">
+        <section className="bg-color-3 px-4 py-3">
           <div className="container">
             {/* Main Logo */}
             <button className="absolute top-2 bg-color-3 rounded-t-[50px] p-1 active:scale-95 transition ease-in-out duration-100">
@@ -67,9 +69,15 @@ const Header: React.FC = () => {
                   </div>
                   <Cart className="w-5 h-5 text-white" />
                 </button>
-                <button className="flex items-center justify-center p-2 border-2 border-white rounded-full active:scale-95 transition ease-in-out duration-100">
-                  <User className="w-3 h-3 text-white" />
-                </button>
+                <div className="relative">
+                  <button
+                    onClick={() => setIsAccount((prev) => !prev)}
+                    className="flex items-center justify-center p-2 border-2 border-white rounded-full active:scale-95 transition ease-in-out duration-100"
+                  >
+                    <User className="w-3 h-3 text-white" />
+                  </button>
+                  {isAccount && <AccountDropdown setIsAccount={setIsAccount} />}
+                </div>
               </div>
             </div>
           </div>

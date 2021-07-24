@@ -2,15 +2,19 @@ import React from 'react'
 import { Location } from 'utils/Icons'
 import { FiClock } from 'react-icons/fi'
 
-interface ScheduleMenuProps {
+interface ScheduleDropdownProps {
   setIsSchedule: Function
+  className?: string
 }
 
-const ScheduleMenu: React.FC<ScheduleMenuProps> = ({ setIsSchedule }) => {
+const ScheduleDropdown: React.FC<ScheduleDropdownProps> = ({
+  setIsSchedule,
+  className,
+}) => {
   return (
     <React.Fragment>
-      <div className="fixed container max-w-md left-0 mt-2 rounded-none sm:rounded shadow-xl mx-0 sm:mx-4 z-10 bg-white text-black">
-        <div className="absolute w-5 h-5 bg-white rotate-45 -top-0.5 left-32"></div>
+      <div className="fixed container w-full sm:w-[260px] inset-x-0 sm:inset-x-auto mt-2 shadow-xl z-10 bg-white text-black">
+        <div className="absolute w-5 h-5 bg-white rotate-45 -top-0.5 left-32 md:left-4"></div>
         <ul className="relative divide-y-2 divide-gray-300">
           <li className="flex items-start justify-center space-x-4 py-4">
             <FiClock className="w-6 h-6" />
@@ -37,10 +41,16 @@ const ScheduleMenu: React.FC<ScheduleMenuProps> = ({ setIsSchedule }) => {
           </li>
           <li className="flex items-center flex-col justify-center py-4 space-y-1">
             <h3 className="mr-16 font-medium">
-              Phones: <span className="text-color-3">(00) 1234 5678</span>
+              Phones:{' '}
+              <span className="text-color-3 hover:underline cursor-text">
+                (00) 1234 5678
+              </span>
             </h3>
             <h3 className="mr-12 font-medium">
-              E-mail: <span className="text-color-3">shop@email.com</span>
+              E-mail:{' '}
+              <span className="text-color-3 hover:underline cursor-text">
+                shop@email.com
+              </span>
             </h3>
           </li>
         </ul>
@@ -53,4 +63,4 @@ const ScheduleMenu: React.FC<ScheduleMenuProps> = ({ setIsSchedule }) => {
   )
 }
 
-export default ScheduleMenu
+export default ScheduleDropdown
