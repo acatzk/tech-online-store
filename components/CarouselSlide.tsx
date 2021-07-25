@@ -18,9 +18,16 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images }) => (
     {images.map(({ src }, i) => (
       <div
         key={i}
-        className="relative w-full h-[160px] md:h-[230px] lg:h-[330px]"
+        className="relative w-full h-[130px] sm:h-[180px] md:h-[230px] lg:h-[330px]"
       >
-        <Image src={src} layout="fill" objectFit="cover" alt="product" />
+        <Image
+          src={src}
+          layout="fill"
+          alt="product"
+          quality={100}
+          blurDataURL={src}
+          placeholder="blur"
+        />
       </div>
     ))}
   </Carousel>

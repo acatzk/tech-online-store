@@ -4,7 +4,7 @@ import CarouselSlide from 'components/CarouselSlide'
 
 const HeroSlide: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container py-3 px-4 lg:py-0 lg:px-0">
       <CarouselSlide images={heroSlideImages} />
     </div>
   )

@@ -1,4 +1,4 @@
-import Sidebar from './Sidebar'
+import dynamic from 'next/dynamic'
 import React, { useState } from 'react'
 import { sidebarLinks } from 'mock/index'
 import { FiInstagram } from 'react-icons/fi'
@@ -8,6 +8,10 @@ import ScheduleDropdown from './ScheduleDropdown'
 import { RiFacebookBoxFill } from 'react-icons/ri'
 import { BiChevronDown, BiSearch } from 'react-icons/bi'
 import { Logo, Menu, Cart, User, LogoWide } from 'utils/Icons'
+
+const Sidebar = dynamic(() => import('./Sidebar'), {
+  ssr: false,
+})
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -94,7 +98,7 @@ const Header: React.FC = () => {
                           </a>
                         </li>
                       ))}
-                      <div className="mx-4 md:mx-6">
+                      <li className="mx-4 md:mx-6">
                         <button
                           className="px-4 py-1 text-sm rounded-full border-2 font-medium border-color-3 
                         text-color-3 hover:bg-color-3 hover:text-white
@@ -102,7 +106,7 @@ const Header: React.FC = () => {
                         >
                           Our Deals
                         </button>
-                      </div>
+                      </li>
                     </ul>
                   </nav>
                 )}
