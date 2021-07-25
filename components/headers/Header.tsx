@@ -115,9 +115,9 @@ const Header: React.FC = () => {
                * SECOND FLEX ITEM
                * ======
                */}
-              <div className="flex-grow">
+              <div className="flex-grow relative">
                 <div className="block lg:hidden">
-                  <div className="form-control relative px-0 md:px-16">
+                  <div className="form-control px-0 md:px-16">
                     <div className="absolute ml-3 flex items-center inset-y-0">
                       <BiSearch className="w-5 h-5 text-color-6" />
                     </div>
@@ -125,21 +125,21 @@ const Header: React.FC = () => {
                       type="text"
                       autoFocus
                       placeholder="Search here"
-                      className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-gray-200 rounded-full focus:outline-none"
+                      className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-color-7 rounded-full focus:outline-none"
                     />
                   </div>
                 </div>
                 {isSearch && (
                   <div className="hidden lg:block">
-                    <div className=" form-control relative px-0 md:px-16">
-                      <div className="absolute ml-3 flex items-center inset-y-0">
-                        <BiSearch className="w-5 h-5 text-color-6" />
+                    <div className=" form-control px-0 md:px-16">
+                      <div className="absolute ml-3 flex items-center inset-y-0 right-20">
+                        <BiSearch className="w-5 h-5 text-color-3" />
                       </div>
                       <input
                         type="text"
                         autoFocus
                         placeholder="Search here"
-                        className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-gray-200 rounded-full focus:outline-none"
+                        className="py-3 lg:py-3.5 pl-10 lg:pl-6 text-xs bg-white lg:bg-color-7 rounded-full focus:outline-none"
                       />
                     </div>
                   </div>
