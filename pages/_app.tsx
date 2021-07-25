@@ -1,3 +1,4 @@
+import 'styles/global.css'
 import 'styles/tailwind.css'
 import type { AppProps } from 'next/app'
 

@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <React.Fragment>
-      <header className="sticky top-0 overflow-x-hidden transition-all ease-in-out duration-300">
+      <header className="sticky top-0 overflow-x-hidden transition-all ease-in-out duration-300 z-10">
         {/* This is schedule and contact us links */}
         <section className="text-xs font-semibold bg-black text-white">
           <div className="container flex items-center justify-between px-4 lg:px-0 py-1">
@@ -119,6 +119,7 @@ const Header: React.FC = () => {
                     </div>
                     <input
                       type="text"
+                      autoFocus
                       placeholder="Search here"
                       className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-gray-200 rounded-full focus:outline-none"
                     />
@@ -132,6 +133,7 @@ const Header: React.FC = () => {
                       </div>
                       <input
                         type="text"
+                        autoFocus
                         placeholder="Search here"
                         className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-gray-200 rounded-full focus:outline-none"
                       />

@@ -52,3 +52,19 @@ export const sidebarLinks = [
     href: '/',
   },
 ]
+
+export interface IHeroImages {
+  src: string
+}
+
+export const heroSlideImages: Array<IHeroImages> = [
+  {
+    src: '/assets/images/hero-product.png',
+  },
+  {
+    src: '/assets/images/hero-product.png',
+  },
+  {
+    src: '/assets/images/hero-product.png',
+  },
+]
