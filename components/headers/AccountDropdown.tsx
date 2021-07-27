@@ -7,8 +7,8 @@ interface AccountDropdownProps {
 const AccountDropdown: React.FC<AccountDropdownProps> = ({ setIsAccount }) => {
   return (
     <React.Fragment>
-      <div className="fixed container w-full sm:w-[260px] sm:right-4 md:right-6 lg:right-16 inset-x-0 sm:inset-x-auto mt-2 shadow-xl z-10 bg-white text-black">
-        <div className="absolute w-5 h-5 bg-white right-6 md:right-2 rotate-45"></div>
+      <div className="fixed w-full sm:w-48 inset-x-0 sm:inset-auto border mt-2 shadow-xl z-10 bg-white text-black">
+        {/* <div className="absolute w-5 h-5 bg-white right-6 md:right-2 rotate-45"></div> */}
         <div className="relative">
           <ul className="py-1.5 text-xs">
             {[
@@ -37,7 +37,8 @@ function DropdownLink({ link, setIsAccount }) {
       <a
         href="#"
         onClick={() => setIsAccount((prev) => !prev)}
-        className="block py-2 px-8 font-medium hover:bg-color-7 transition ease-in-out duration-100"
+        className="block py-2 px-8 font-medium hover:bg-color-7 
+        focus:bg-color-3 focus:text-white transition ease-in-out duration-100"
       >
         {link}
       </a>

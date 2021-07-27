@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                       type="text"
                       autoFocus
                       placeholder="Search here"
-                      className="py-3 lg:py-3.5 pl-10 text-xs bg-white lg:bg-color-7 rounded-full focus:outline-none"
+                      className="py-3 pl-10 text-sm bg-white lg:bg-color-7 rounded-full focus:outline-none"
                     />
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const Header: React.FC = () => {
                         type="text"
                         autoFocus
                         placeholder="Search here"
-                        className="py-3 lg:py-3.5 pl-10 lg:pl-6 text-xs bg-white lg:bg-color-7 rounded-full focus:outline-none"
+                        className="py-3 pl-10 lg:pl-6 text-sm bg-white lg:bg-color-7 rounded-full focus:outline-none"
                       />
                     </div>
                   </div>
@@ -149,7 +149,7 @@ const Header: React.FC = () => {
                * THIRD FLEX ITEM
                * ======
                */}
-              <div className="flex items-center space-x-4 lg:space-x-6">
+              <div className="relative flex items-center space-x-4 lg:space-x-6">
                 {/* Close button show only in large screen */}
                 <div className="flex items-center">
                   {isSearch && (
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
                   <Cart className="w-5 h-5 text-white lg:text-black" />
                 </button>
                 {/* User dropdown button */}
-                <div className="relative">
+                <div>
                   <button
                     onClick={() => setIsAccount((prev) => !prev)}
                     className="flex items-center justify-center p-2 border-2 border-white lg:border-black rounded-full active:scale-95 transition ease-in-out duration-100"
