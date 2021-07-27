@@ -36,7 +36,7 @@ const ProductItem: React.FC<INewProduct> = ({
               {before_price}
             </Currency>
           </h2>
-          <h1 className="text-black font-semibold line-through text-lg">
+          <h1 className="text-black font-semibold text-lg">
             <Currency locale="en-US" currency="USD">
               {new_price}
             </Currency>
