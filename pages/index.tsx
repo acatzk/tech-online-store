@@ -4,6 +4,7 @@ import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import Layout from 'layouts/defaultLayout'
 import HeroSlide from 'sections/HeroSlide'
+import PromotionAlert from 'sections/PromotionAlert'
 
 const NewProducts = dynamic(() => import('sections/NewProducts'), {
   ssr: false,
@@ -18,6 +19,7 @@ const Index: NextPage = () => {
       <Layout>
         <HeroSlide />
         <NewProducts />
+        <PromotionAlert />
       </Layout>
     </React.Fragment>
   )
