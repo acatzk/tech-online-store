@@ -69,7 +69,7 @@ export const heroSlideImages: Array<IHeroImages> = [
   },
 ]
 
-export interface INewProduct {
+export interface IProduct {
   image: string
   name: string
   reviews: number
@@ -78,7 +78,7 @@ export interface INewProduct {
   isStock: boolean
 }
 
-export const newProducts: Array<INewProduct> = [
+export const newProducts: Array<IProduct> = [
   {
     image: '/assets/new-products/product1.svg',
     name: 'EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...',

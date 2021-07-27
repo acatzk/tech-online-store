@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { INewProduct } from 'mock'
+import { IProduct } from 'mock'
 import { motion } from 'framer-motion'
 import { Currency } from 'react-intl-number-format'
 import { AiFillCheckCircle, AiFillStar } from 'react-icons/ai'
 
-const ProductItem: React.FC<INewProduct> = ({
+const ProductItem: React.FC<IProduct> = ({
   image,
   name,
   reviews,

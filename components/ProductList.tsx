@@ -1,9 +1,9 @@
 import React from 'react'
-import { INewProduct } from 'mock'
+import { IProduct } from 'mock'
 import ProductItem from './ProductItem'
 
 interface ProductListProps {
-  products: Array<INewProduct>
+  products: Array<IProduct>
 }
 
 const ProductList: React.FC<ProductListProps> = ({ products }, props) => {
