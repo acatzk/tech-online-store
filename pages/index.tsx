@@ -26,6 +26,10 @@ const GamingMonitors = dynamic(() => import('sections/GamingMonitors'), {
   ssr: false,
 })
 
+const CompanyList = dynamic(() => import('sections/CompanyList'), {
+  ssr: false,
+})
+
 const Index: NextPage = () => {
   return (
     <React.Fragment>
@@ -40,6 +44,7 @@ const Index: NextPage = () => {
         <MSILaptops />
         <Desktops />
         <GamingMonitors />
+        <CompanyList />
       </Layout>
     </React.Fragment>
   )

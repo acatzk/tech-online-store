@@ -7,7 +7,7 @@ interface ProductTabsProps {
 
 const ProductTabs: React.FC<ProductTabsProps> = ({ tabs }) => {
   return (
-    <div className="inline-flex items-center font-semibold text-sm space-x-6">
+    <div className="inline-flex flex-wrap items-center font-semibold text-sm space-x-6">
       {tabs.map(({ title }, i) => (
         <a
           key={i}
