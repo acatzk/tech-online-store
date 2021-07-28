@@ -510,3 +510,27 @@ export const monitors: IProduct[] = [
     isStock: true,
   },
 ]
+
+export const companies: Array<{ src: string }> = [
+  {
+    src: '/assets/companies/roccat.svg',
+  },
+  {
+    src: '/assets/companies/msi.svg',
+  },
+  {
+    src: '/assets/companies/razer.svg',
+  },
+  {
+    src: '/assets/companies/thermaltake.svg',
+  },
+  {
+    src: '/assets/companies/adata.svg',
+  },
+  {
+    src: '/assets/companies/hewlett.svg',
+  },
+  {
+    src: '/assets/companies/gigabyte.svg',
+  },
+]
