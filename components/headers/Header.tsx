@@ -57,7 +57,7 @@ const Header: React.FC = () => {
         </section>
 
         {/* This is the Main header */}
-        <section className="bg-color-3 lg:bg-white border-b border-transparent lg:border-b-gray-200 px-4 py-3">
+        <section className="bg-color-3 lg:bg-white/90 border-b border-transparent lg:border-b-gray-200 px-4 py-3">
           <div className="container">
             {/* Main Logo */}
             <div className="block lg:hidden">
