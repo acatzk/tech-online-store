@@ -18,13 +18,15 @@ const ProductItem: React.FC<IProduct> = ({
       whileHover={{ y: -6 }}
       className="carousel-item border border-transparent hover:border-gray-100 hover:shadow-xl cursor-pointer transition ease-in-out duration-150"
     >
-      <div className="flex flex-col py-3 px-6">
+      <div className="flex flex-col py-3 px-7">
         <ProductStatus isStock={isStock} />
         <div className="mt-2 relative w-[150px] mx-2 h-[150px] flex flex-col items-center">
           <Image
             src={image}
             layout="fill"
             className="w-full h-full"
+            blurDataURL={image}
+            placeholder="blur"
             alt="product-1"
           />
         </div>
