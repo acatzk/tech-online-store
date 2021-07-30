@@ -2,11 +2,12 @@ import dynamic from 'next/dynamic'
 import React, { useState } from 'react'
 import ScheduleMenu from './ScheduleMenu'
 import { sidebarLinks } from 'mock/index'
+import AddToCardMenu from './AddToCardMenu'
 import { FiInstagram } from 'react-icons/fi'
 import { RiCloseLine } from 'react-icons/ri'
 import UserAccountMenu from './UserAccountMenu'
 import { RiFacebookBoxFill } from 'react-icons/ri'
-import { Logo, Menu as MenuIcon, Cart, LogoWide } from 'utils/Icons'
+import { Logo, Menu as MenuIcon, LogoWide } from 'utils/Icons'
 import { BiChevronDown, BiSearch, BiChevronRight } from 'react-icons/bi'
 
 const Sidebar = dynamic(() => import('./Sidebar'), {
@@ -168,14 +169,7 @@ const Header: React.FC = () => {
                   )}
                 </div>
                 {/* Cart button */}
-                <div>
-                  <button className="relative right-1 md:right-0 top-1 flex items-center active:scale-95 transition ease-in-out duration-100">
-                    <div className="absolute text-[0.65rem] px-1.5 py-0.5 font-bold bg-white lg:bg-color-3 text-color-3 lg:text-white rounded-full -top-3.5 left-3.5">
-                      2
-                    </div>
-                    <Cart className="w-5 h-5 text-white lg:text-black" />
-                  </button>
-                </div>
+                <AddToCardMenu />
                 {/* User Account Menu dropdown button */}
                 <UserAccountMenu />
               </div>
