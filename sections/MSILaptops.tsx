@@ -5,7 +5,7 @@ import ProductFeature from 'components/ProductFeature'
 
 const MSILaptops: React.FC = () => {
   return (
-    <section className="container mt-5 py-3 px-4 lg:py-0 lg:px-0 space-y-2">
+    <section className="container mt-6 py-3 px-4 lg:py-0 lg:px-0 space-y-2">
       <ProductTabs tabs={msiTabs} />
       <ProductFeature
         title="MSI Laptops"

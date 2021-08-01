@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { IProduct } from 'mock'
 import { motion } from 'framer-motion'
+import { Heart, Graph, Cart } from 'utils/Icons'
 import { Currency } from 'react-intl-number-format'
 import { AiFillCheckCircle, AiFillStar } from 'react-icons/ai'
 
@@ -15,9 +16,31 @@ const ProductItem: React.FC<IProduct> = ({
 }) => {
   return (
     <motion.div
-      whileHover={{ y: -6 }}
-      className="carousel-item border border-transparent hover:border-gray-100 hover:shadow-xl cursor-pointer transition ease-in-out duration-150"
+      whileHover={{ y: -9 }}
+      className="group relative carousel-item border border-transparent hover:border-gray-100 hover:shadow-xl cursor-pointer transition-all ease-in-out duration-300"
     >
+      {/*
+       * This is icon details
+       * show only when hover
+       */}
+      <div className="hidden group-hover:block">
+        <div className="absolute flex flex-col space-y-2 flex-shrink-0 right-1 top-5 z-10">
+          <button
+            className="rounded-full text-[#8C8C8C] border-2
+           border-[#8C8C8C] hover:text-black hover:border-black
+           transition ease-in-out duration-150"
+          >
+            <Heart className="w-6 h-6 p-1" />
+          </button>
+          <button
+            className="rounded-full text-[#8C8C8C] border-2 border-[#8C8C8C] 
+          hover:text-black hover:border-black transition ease-in-out duration-150"
+          >
+            <Graph className="w-6 h-6 p-1" />
+          </button>
+        </div>
+      </div>
+      {/* Display Product Details */}
       <div className="flex flex-col py-3 px-7">
         <ProductStatus isStock={isStock} />
         <div className="mt-2 relative w-[150px] mx-2 h-[150px] flex flex-col items-center">
@@ -44,6 +67,19 @@ const ProductItem: React.FC<IProduct> = ({
             </Currency>
           </h1>
         </div>
+        {/* This is Add to card
+         * it will show during hover
+         */}
+        {/* <div className="hidden group-hover:block">
+          <button
+            className="flex items-center justify-center my-1 w-full rounded-full border-2 border-color-3 
+          text-color-3 py-2 px-4 space-x-2 hover:bg-color-3 hover:text-white
+          transition ease-in-out duration-200"
+          >
+            <Cart className="w-5 h-5" />
+            <span className="font-semibold text-sm">Add To Cart</span>
+          </button>
+        </div> */}
       </div>
     </motion.div>
   )

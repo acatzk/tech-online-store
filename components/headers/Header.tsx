@@ -22,8 +22,8 @@ const Header: React.FC = () => {
     <React.Fragment>
       <header className="sticky top-0 transition-all ease-in-out duration-300 z-10">
         {/* This is schedule and contact us links */}
-        <section className="relative text-xs font-semibold bg-black text-white">
-          <div className="container flex items-center justify-between px-4 lg:px-0 py-1">
+        <section className="relative text-xs font-semibold bg-black text-white px-4 md:px-0 py-1">
+          <div className="container flex items-center justify-between">
             <div className="ml-16 lg:ml-0 relative">
               <ScheduleMenu />
             </div>
