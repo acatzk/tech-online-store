@@ -1,30 +1,84 @@
 import React from 'react'
 
-export const LoadingSpinner: React.FC<{ className?: string }> = ({
-  className,
-}) => {
+interface ISpinner {
+  className?: string
+}
+
+export const LoadingSpinner: React.FC<ISpinner> = ({ className }) => {
   return (
-    <div className="flex items-center justify-center my-16">
+    <div className="flex flex-col items-center justify-center my-4">
       <svg
-        className={`w-7 h-7 ${className}`}
-        viewBox="0 0 24 24"
+        className={className}
+        viewBox="0 0 120 30"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        color="#000000"
       >
-        <g>
-          <path d="M10.998 22a.846.846 0 010-1.692 9.308 9.308 0 000-18.616 9.286 9.286 0 00-7.205 3.416.846.846 0 11-1.31-1.072A10.978 10.978 0 0110.998 0c6.075 0 11 4.925 11 11s-4.925 11-11 11z"></path>
-          <animateTransform
-            attributeName="transform"
-            attributeType="XML"
-            type="rotate"
-            from="0 11 11"
-            to="360 11 11"
-            dur=".6s"
+        <circle cx="15" cy="15" r="15">
+          <animate
+            attributeName="r"
+            from="15"
+            to="15"
+            begin="0s"
+            dur="0.8s"
+            values="15;9;15"
             calcMode="linear"
             repeatCount="indefinite"
-          ></animateTransform>
-        </g>
+          ></animate>
+          <animate
+            attributeName="fill-opacity"
+            from="1"
+            to="1"
+            begin="0s"
+            dur="0.8s"
+            values="1;.5;1"
+            calcMode="linear"
+            repeatCount="indefinite"
+          ></animate>
+        </circle>
+        <circle cx="60" cy="15" r="9" fillOpacity=".3">
+          <animate
+            attributeName="r"
+            from="9"
+            to="9"
+            begin="0s"
+            dur="0.8s"
+            values="9;15;9"
+            calcMode="linear"
+            repeatCount="indefinite"
+          ></animate>
+          <animate
+            attributeName="fill-opacity"
+            from=".5"
+            to=".5"
+            begin="0s"
+            dur="0.8s"
+            values=".5;1;.5"
+            calcMode="linear"
+            repeatCount="indefinite"
+          ></animate>
+        </circle>
+        <circle cx="105" cy="15" r="15">
+          <animate
+            attributeName="r"
+            from="15"
+            to="15"
+            begin="0s"
+            dur="0.8s"
+            values="15;9;15"
+            calcMode="linear"
+            repeatCount="indefinite"
+          ></animate>
+          <animate
+            attributeName="fill-opacity"
+            from="1"
+            to="1"
+            begin="0s"
+            dur="0.8s"
+            values="1;.5;1"
+            calcMode="linear"
+            repeatCount="indefinite"
+          ></animate>
+        </circle>
       </svg>
     </div>
   )

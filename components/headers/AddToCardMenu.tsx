@@ -43,7 +43,7 @@ const AddToCardMenu: React.FC = () => {
                     View or Edit Your Cart
                   </button>
                 </header>
-                <main>
+                <main className="divide-y">
                   <ProductCart products={[0, 1]} />
                 </main>
                 <footer className="flex flex-col items-center px-6 py-4 mb-1 w-full">

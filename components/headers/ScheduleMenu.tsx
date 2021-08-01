@@ -32,7 +32,7 @@ const ScheduleMenu: React.FC = () => {
           >
             <Menu.Items
               static
-              className="absolute z-10 w-[300px] shadow-lg bg-white text-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="absolute z-10 w-[230px] sm:w-[300px] shadow-lg bg-white text-black ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <ul className="divide-y-2 divide-gray-300">
                 <li className="flex items-start justify-center space-x-4 py-4">
