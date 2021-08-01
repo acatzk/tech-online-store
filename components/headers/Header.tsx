@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                               <BiChevronDown className="w-4 h-4 group-hover:text-color-3" />
                             )}
                           </div>
-                          <SubMenuDropdown link={link} />
+                          {link?.submenu && <SubMenuDropdown link={link} />}
                         </div>
                       ))}
                       <div className="mx-4 md:mx-6">
