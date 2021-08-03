@@ -534,3 +534,178 @@ export const companies: Array<{ src: string }> = [
     src: '/assets/companies/gigabyte.svg',
   },
 ]
+
+export interface IFooter {
+  title: string
+  links?: Array<{
+    title: string
+    href: string
+  }>
+  address?: Object
+}
+
+export const footerLinks: IFooter[] = [
+  {
+    title: 'Information',
+    links: [
+      {
+        title: 'About Us',
+        href: '/',
+      },
+      {
+        title: 'About Zip',
+        href: '/',
+      },
+      {
+        title: 'Privacy Policy',
+        href: '/',
+      },
+      {
+        title: 'Search',
+        href: '/',
+      },
+      {
+        title: 'Terms',
+        href: '/',
+      },
+      {
+        title: 'Orders and Returns',
+        href: '/',
+      },
+      {
+        title: 'Contact Us',
+        href: '/',
+      },
+      {
+        title: 'Advanced Search',
+        href: '/',
+      },
+      {
+        title: 'Newsletter Subscription',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'PC Parts',
+    links: [
+      {
+        title: 'CPUS',
+        href: '/',
+      },
+      {
+        title: 'Add On Cards',
+        href: '/',
+      },
+      {
+        title: 'Hard Drives (Internal)',
+        href: '/',
+      },
+      {
+        title: 'Graphics Cards',
+        href: '/',
+      },
+      {
+        title: 'Keyboards / Mice',
+        href: '/',
+      },
+      {
+        title: 'Cases / Power Supplies / Cooling',
+        href: '/',
+      },
+      {
+        title: 'RAM (Memory)',
+        href: '/',
+      },
+      {
+        title: 'Software',
+        href: '/',
+      },
+      {
+        title: 'Speaker / Headsets',
+        href: '/',
+      },
+      {
+        title: 'Motherboards',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Desktop PCs',
+    links: [
+      {
+        title: 'Custom PCs',
+        href: '/',
+      },
+      {
+        title: 'Servers',
+        href: '/',
+      },
+      {
+        title: 'MSI All-in-One PCs',
+        href: '/',
+      },
+      {
+        title: 'HP/Compaq PCs',
+        href: '/',
+      },
+      {
+        title: 'ASUS PCs',
+        href: '/',
+      },
+      {
+        title: 'Tecs PCs',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Laptops',
+    links: [
+      {
+        title: 'Evryday Use Notebooks',
+        href: '/',
+      },
+      {
+        title: 'MSI Workstation Series',
+        href: '/',
+      },
+      {
+        title: 'MSI Prestige Series',
+        href: '/',
+      },
+      {
+        title: 'Tablets and Pads',
+        href: '/',
+      },
+      {
+        title: 'Netbooks',
+        href: '/',
+      },
+      {
+        title: 'Infinity Gaming Notebooks',
+        href: '/',
+      },
+    ],
+  },
+  {
+    title: 'Address',
+    address: {
+      location: '1234 Street Address City',
+      phones: '(00) 1234 5678',
+      dailySchedule: 'We are open: Monday-Thursday: 9:00 AM - 5:30 PM',
+      fridaySchedule: '9:00 AM - 6:00 PM',
+      saturdaySchedule: '11:00 AM - 5:00 PM',
+      email: 'shop@gmail.com',
+    },
+  },
+]
+
+export const paymentLogos = [
+  '/assets/payment-method/paypal.svg',
+  '/assets/payment-method/visa.svg',
+  '/assets/payment-method/maestro.svg',
+  '/assets/payment-method/discover.svg',
+  '/assets/payment-method/american-express.svg',
+]
