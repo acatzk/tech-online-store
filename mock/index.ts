@@ -709,3 +709,30 @@ export const paymentLogos = [
   '/assets/payment-method/discover.svg',
   '/assets/payment-method/american-express.svg',
 ]
+
+export interface IService {
+  title: string
+  description: string
+  image: string
+}
+
+export const services: IService[] = [
+  {
+    title: 'Product Support',
+    description:
+      'Up to 3 years on-site warranty available for your peace of mind.',
+    image: '/assets/services/audio.svg',
+  },
+  {
+    title: 'Personal Account',
+    description:
+      'With big discounts, free delivery and a dedicated support specialist.',
+    image: '/assets/services/user.svg',
+  },
+  {
+    title: 'Amazing Savings',
+    description:
+      'Up to 70% off new Products, you can be sure of the best price.',
+    image: '/assets/services/price-tag.svg',
+  },
+]
