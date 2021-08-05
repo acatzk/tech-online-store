@@ -736,3 +736,57 @@ export const services: IService[] = [
     image: '/assets/services/price-tag.svg',
   },
 ]
+
+export interface INewOffer {
+  image: string
+  text: string
+  date: string
+}
+
+export const newsAndOffers: INewOffer[] = [
+  {
+    image: '/assets/news-offers/image1.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image2.svg',
+    text: 'As a gamer, superior sound counts for a lot. You need to hear enemies tiptoeing up behind you for a sneak attack or a slight change in the atmospheric music signaling a new challenge or task...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image3.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image4.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image5.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image6.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image7.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image8.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+  {
+    image: '/assets/news-offers/image9.svg',
+    text: 'If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...',
+    date: '01.09.2020'
+  },
+]

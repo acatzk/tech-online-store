@@ -47,6 +47,11 @@ const Services = dynamic(() => import('sections/Services'), {
   loading: () => <LoadingSpinner className="w-6 h-6 text-black" />,
 })
 
+const NewsAndOffers = dynamic(() => import('sections/News&Offers'), {
+  ssr: false,
+  loading: () => <LoadingSpinner className="w-6 h-6 text-black" />,
+})
+
 const Index: NextPage = () => {
   return (
     <React.Fragment>
@@ -62,6 +67,7 @@ const Index: NextPage = () => {
         <Desktops />
         <GamingMonitors />
         <CompanyList />
+        <NewsAndOffers />
         <Testimonials />
         <Services />
       </Layout>
