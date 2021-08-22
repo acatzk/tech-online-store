@@ -11,7 +11,7 @@ import { Logo, Menu as MenuIcon, LogoWide } from 'utils/Icons'
 import { BiChevronDown, BiSearch, BiChevronRight } from 'react-icons/bi'
 
 const Sidebar = dynamic(() => import('./Sidebar'), {
-  ssr: false,
+  ssr: false
 })
 
 const Header: React.FC = () => {

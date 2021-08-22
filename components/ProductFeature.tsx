@@ -9,11 +9,7 @@ interface ProductFeatureProps {
   products: Array<IProduct>
 }
 
-const ProductFeature: React.FC<ProductFeatureProps> = ({
-  title,
-  src,
-  products,
-}) => {
+const ProductFeature: React.FC<ProductFeatureProps> = ({ title, src, products }) => {
   return (
     <div className="flex flex-col md:flex-row items-center overflow-hidden flex-grow">
       <div className="relative w-[500px] h-[100px] md:w-[225px] md:h-[350px] flex-shrink-0">

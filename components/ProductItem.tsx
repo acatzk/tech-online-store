@@ -12,7 +12,7 @@ const ProductItem: React.FC<IProduct> = ({
   reviews,
   before_price,
   new_price,
-  isStock,
+  isStock
 }) => {
   return (
     <motion.div
@@ -145,9 +145,7 @@ function ProductReviews({ reviews }) {
         )}
       </div>
       <p className="text-xs text-color-5">
-        {reviews === 0
-          ? `No Reviews`
-          : `Review${reviews >= 2 ? `s` : ''} (${reviews})`}
+        {reviews === 0 ? `No Reviews` : `Review${reviews >= 2 ? `s` : ''} (${reviews})`}
       </p>
     </div>
   )
