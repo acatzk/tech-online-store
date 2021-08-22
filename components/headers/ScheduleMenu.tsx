@@ -40,39 +40,30 @@ const ScheduleMenu: React.FC = () => {
                   <div className="space-y-1">
                     <p className="font-medium">We are open:</p>
                     <h3>
-                      <span className="text-color-5">Mon-Thu:</span> 9:00 AM -
-                      5:30 PM
+                      <span className="text-color-5">Mon-Thu:</span> 9:00 AM - 5:30 PM
                     </h3>
                     <h3>
-                      <span className="text-color-5">Fr:</span> 9:00 AM - 6:00
-                      PM
+                      <span className="text-color-5">Fr:</span> 9:00 AM - 6:00 PM
                     </h3>
                     <h3>
-                      <span className="text-color-5">Sat:</span> 11:00 AM - 5:00
-                      PM
+                      <span className="text-color-5">Sat:</span> 11:00 AM - 5:00 PM
                     </h3>
                   </div>
                 </li>
                 <li className="flex items-start justify-center space-x-4 py-4">
                   <Location className="w-6 h-6" />
                   <div className="w-[170px]">
-                    <p className="font-medium">
-                      Address: 1234 Street Address, City Address, 1324
-                    </p>
+                    <p className="font-medium">Address: 1234 Street Address, City Address, 1324</p>
                   </div>
                 </li>
                 <li className="flex items-center flex-col justify-center py-4 space-y-1">
                   <h3 className="mr-16 font-medium">
                     Phones:{' '}
-                    <span className="text-color-3 hover:underline cursor-text">
-                      (00) 1234 5678
-                    </span>
+                    <span className="text-color-3 hover:underline cursor-text">(00) 1234 5678</span>
                   </h3>
                   <h3 className="mr-12 font-medium">
                     E-mail:{' '}
-                    <span className="text-color-3 hover:underline cursor-text">
-                      shop@email.com
-                    </span>
+                    <span className="text-color-3 hover:underline cursor-text">shop@email.com</span>
                   </h3>
                 </li>
               </ul>

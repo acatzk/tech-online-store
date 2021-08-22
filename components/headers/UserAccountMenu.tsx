@@ -36,7 +36,7 @@ const UserAccountMenu: React.FC = () => {
                   'My Wish List (0)',
                   'Compare (0)',
                   'Create an Account',
-                  'Sign In',
+                  'Sign In'
                 ].map((link, i) => (
                   <Menu.Item key={i}>
                     {({ active }) => (

@@ -12,9 +12,7 @@ const Footer: React.FC = () => {
       <div className="container py-8 px-6 lg:px-0">
         <section className="flex flex-col md:flex-row justify-center md:justify-between space-y-6 md:space-y-0">
           <div className="text-center md:text-left space-y-1">
-            <h1 className="font-medium text-lg lg:text-2xl">
-              Sign up To Our Newsletter.
-            </h1>
+            <h1 className="font-medium text-lg lg:text-2xl">Sign up To Our Newsletter.</h1>
             <p className="text-xs lg:text-sm font-extralight text-white">
               Be the first to hear about the latest offers.
             </p>
@@ -65,15 +63,7 @@ function PaymentImages({ paymentLogos }) {
   return (
     <div className="flex items-center justify-center space-x-2">
       {paymentLogos.map((src, i) => (
-        <Image
-          key={i}
-          src={src}
-          width={40}
-          height={30}
-          layout="fixed"
-          quality={100}
-          alt={src}
-        />
+        <Image key={i} src={src} width={40} height={30} layout="fixed" quality={100} alt={src} />
       ))}
     </div>
   )

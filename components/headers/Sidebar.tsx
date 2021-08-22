@@ -33,14 +33,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
         <nav className="flex flex-col py-4 space-y-2 text-sm">
           <ul>
             {sidebarLinks.map((link, i) => (
-              <li
-                key={i}
-                className="hover:bg-color-7 transition ease-in-out duration-100"
-              >
-                <a
-                  href="#"
-                  className="flex items-center justify-between py-2 px-4 md:px-6"
-                >
+              <li key={i} className="hover:bg-color-7 transition ease-in-out duration-100">
+                <a href="#" className="flex items-center justify-between py-2 px-4 md:px-6">
                   <span className="font-normal">{link.title}</span>
                   <BiChevronRight className="w-4 h-4" />
                 </a>

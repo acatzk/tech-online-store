@@ -20,13 +20,9 @@ const PromotionAlert = () => {
           </div>
         </div>
         <h1>
-          <span className="font-bold">own</span> it now, up to 6 months interest
-          free
+          <span className="font-bold">own</span> it now, up to 6 months interest free
         </h1>
-        <a
-          href="#"
-          className="text-lg md:text-base underline hover:no-underline"
-        >
+        <a href="#" className="text-lg md:text-base underline hover:no-underline">
           learn more
         </a>
       </div>

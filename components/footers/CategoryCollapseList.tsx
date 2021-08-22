@@ -21,11 +21,7 @@ const CollapseList: React.FC<CollapseListProps> = ({ footerLinks }) => {
           }`}
         >
           <h1 className="text-xs font-medium">{title}</h1>
-          {open ? (
-            <BiChevronUp className="w-4 h-4" />
-          ) : (
-            <BiChevronDown className="w-4 h-4" />
-          )}
+          {open ? <BiChevronUp className="w-4 h-4" /> : <BiChevronDown className="w-4 h-4" />}
         </button>
         {open && <CategoryCollapseItem links={links} address={address} />}
       </section>

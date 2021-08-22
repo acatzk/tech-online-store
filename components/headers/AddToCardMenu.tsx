@@ -32,9 +32,7 @@ const AddToCardMenu: React.FC = () => {
               <section className="flex flex-col divide-y">
                 <header className="flex flex-col items-center py-5 px-4">
                   <h1 className="text-base font-semibold">My Cart</h1>
-                  <p className="text-xs text-color-5 font-light">
-                    2 item in cart
-                  </p>
+                  <p className="text-xs text-color-5 font-light">2 item in cart</p>
                   <button
                     type="button"
                     className="mt-3 block text-sm px-12 py-1 font-medium bg-transparent border-2 border-color-3
@@ -49,8 +47,7 @@ const AddToCardMenu: React.FC = () => {
                 <footer className="flex flex-col items-center px-6 py-4 mb-1 w-full">
                   <div className="font-semibold text-sm text-color-5">
                     <h1>
-                      Subtotal:{' '}
-                      <span className="text-black text-lg">$499.00</span>
+                      Subtotal: <span className="text-black text-lg">$499.00</span>
                     </h1>
                   </div>
                   <div className="mt-2 space-y-2 w-full">
@@ -66,9 +63,7 @@ const AddToCardMenu: React.FC = () => {
                       className="flex items-center justify-center rounded-full w-full space-x-3 py-2 bg-[#FFB800] 
                       hover:bg-[#FFB800] hover:bg-opacity-95 transition ease-in-out duration-150"
                     >
-                      <span className="text-xs text-black font-semibold">
-                        Checkout with
-                      </span>
+                      <span className="text-xs text-black font-semibold">Checkout with</span>
                       <div className="flex items-center">
                         <Image
                           width={72}

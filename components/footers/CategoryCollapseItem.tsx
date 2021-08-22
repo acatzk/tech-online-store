@@ -6,10 +6,7 @@ interface CategoryCollapseItemProps {
   address: Object | any
 }
 
-const CategoryCollapseItem: React.FC<CategoryCollapseItemProps> = ({
-  links,
-  address,
-}) => {
+const CategoryCollapseItem: React.FC<CategoryCollapseItemProps> = ({ links, address }) => {
   return (
     <>
       {links &&

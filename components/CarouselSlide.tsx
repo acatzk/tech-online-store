@@ -13,16 +13,13 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({ images }) => {
     dynamicHeight: true,
     emulateTouch: true,
     infiniteLoop: true,
-    showIndicators: false,
+    showIndicators: false
   }
 
   return (
     <Carousel {...settings}>
       {images.map(({ src }, i) => (
-        <div
-          key={i}
-          className="relative w-full h-[130px] sm:h-[180px] md:h-[230px] lg:h-[330px]"
-        >
+        <div key={i} className="relative w-full h-[130px] sm:h-[180px] md:h-[230px] lg:h-[330px]">
           <Image
             src={src}
             layout="fill"
